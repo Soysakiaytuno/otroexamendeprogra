@@ -6,9 +6,9 @@ while(inicio){
     Console.WriteLine("Si no quiere nada escriba salir");
     bool autos = true;
     string auto = Console.ReadLine();
-    auto.ToLower();
-    auto.Replace(" ", "");
-    auto.Trim();
+    auto = auto.ToLower();
+    auto = auto.Replace(" ", "");
+    auto = auto.Trim();
     if(auto == "bicicleta"){
         Bicicleta mibici = new Bicicleta();
         mibici.registrar();
